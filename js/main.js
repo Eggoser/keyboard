@@ -109,6 +109,7 @@ $(document).ready(function(){
           if (metrics.time <= 0){
             $("#act").attr("class", "active_disp");
             $(".textbar").off();
+            options.focus = false;
             clearInterval(counter);
           }
         },1000);
